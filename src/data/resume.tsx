@@ -240,6 +240,33 @@ export const DATA = {
       video: "/smart_chat_assistent_demo_vid.mov",
     },
     {
+      title: "Movie Recommendation System",
+      href: "https://movie-finder-sys.streamlit.app/",
+      dates: "May 2026",
+      active: true,
+      description:
+        "A hybrid movie recommendation system combining content-based filtering and collaborative filtering, built on the TMDB 5000 dataset and deployed as an interactive Streamlit web app.",
+      technologies: [
+        "Streamlit",
+        "Scikit-learn",
+        "Python",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://movie-finder-sys.streamlit.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/NeelContractor/movie_recommendation_system",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/movie-recommendation-system.png",
+      video: "",
+    },
+    {
       title: "Research Assistant",
       href: "https://researchassistantagent.streamlit.app/",
       dates: "March 2026",
