@@ -8,6 +8,7 @@ import { Python } from "@/components/ui/svgs/python";
 import { LangChain } from "@/components/ui/svgs/langchain";
 import { LangGraph } from "@/components/ui/svgs/langgraph";
 import { Ollama } from "@/components/ui/svgs/ollama";
+import { FastAPI } from "@/components/ui/svgs/fastapi";
 
 export const DATA = {
   name: "Neel Contractor",
@@ -16,9 +17,9 @@ export const DATA = {
   location: "India",
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer. I love building things and helping people.",
+    "Applied AI Engineer building intelligent systems with LLMs.",
   summary:
-    "I’m an AI developer focused on building agentic AI systems that can plan, reason, and execute tasks. My work centers around designing multi-agent architectures, integrating LLMs with tools, and creating real-world applications such as research assistants, image analysis agents, and autonomous workflows.",
+    "I'm an AI developer passionate about building products with LLMs. I create AI systems that integrate language models with tools, retrieval pipelines, databases, and external APIs to automate real-world workflows. My projects include Harness, RAG applications, and autonomous AI agents built with Python, FastAPI, LangGraph, and modern AI frameworks. I enjoy learning quickly, shipping fast, and solving practical problems with AI.",
   avatarUrl: "/pic.jpg",
   skills: [
     { name: "React", icon: ReactLight },
@@ -29,6 +30,7 @@ export const DATA = {
     { name: "LangChain", icon: LangChain },
     { name: "LangGraph", icon: LangGraph },
     { name: "Ollama", icon: Ollama },
+    { name: "FastAPI", icon: FastAPI },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -185,198 +187,312 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Vision Agent",
-      href: "https://visionagentapp.streamlit.app/",
-      dates: "April 2026",
+      title: "My Harness",
+      href: "https://github.com/NeelContractor/my-harness",
+      dates: "June 2026",
       active: true,
       description:
-        "A lightweight local AI vision agent built with Streamlit + LangGraph + Ollama that analyzes images and answers user questions using a multi-step pipeline.",
+        "A fully-featured AI agent harness built from scratch in Python — no LangChain, no frameworks, just clean layered code.",
       technologies: [
-        "Streamlit",
-        "LangGraph",
-        "Ollama",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/NeelContractor/VisionAgent",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Website",
-          href: "https://visionagentapp.streamlit.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/vision_agent.png",
-      video:
-        "/vision_agent_demo_vid.mov",
-    },
-    {
-      title: "SmartChat Assistant",
-      href: "https://smartchatassistant.streamlit.app/",
-      dates: "March 2026",
-      active: true,
-      description:
-        "A powerful AI chat application built with Streamlit + LangGraph + Ollama that supports: Multi-threaded conversations, PDF-based RAG, Web search, Stock price lookup, Calculator tool, Persistent memory using SQLite checkpoints",
-      technologies: [
-        "Streamlit",
-        "LangGraph",
-        "Ollama",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://smartchatassistant.streamlit.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/NeelContractor/SmartChatAssistant",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/smar_chat_assistent.png",
-      video: "/smart_chat_assistent_demo_vid.mov",
-    },
-    {
-      title: "Movie Recommendation System",
-      href: "https://movie-finder-sys.streamlit.app/",
-      dates: "May 2026",
-      active: true,
-      description:
-        "A hybrid movie recommendation system combining content-based filtering and collaborative filtering, built on the TMDB 5000 dataset and deployed as an interactive Streamlit web app.",
-      technologies: [
-        "Streamlit",
-        "Scikit-learn",
         "Python",
+        "OpenRouter",
+        "Docker",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://movie-finder-sys.streamlit.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/NeelContractor/movie_recommendation_system",
+          href: "https://github.com/NeelContractor/my-harness",
           icon: <Icons.github className="size-3" />,
         },
+        // {
+        //   type: "Website",
+        //   href: "https://visionagentapp.streamlit.app/",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
       ],
-      image: "/movie-recommendation-system.png",
-      video: "",
-    },
-    {
-      title: "Research Assistant",
-      href: "https://researchassistantagent.streamlit.app/",
-      dates: "March 2026",
-      active: true,
-      description:
-        "A fully local, privacy-first research assistant powered by LangGraph (multi-agent orchestration), Ollama (local LLMs), and Streamlit (frontend UI).",
-      technologies: [
-        "Streamlit",
-        "LangGraph",
-        "Ollama",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://researchassistantagent.streamlit.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/NeelContractor/ResearchAssistantAgent",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/research_assistent_agent.png",
-      video: "/researchagentdemovideo.mov",
-    },
-    {
-      title: "Blog Writing Agent",
-      href: "https://blogwritingagentapp.streamlit.app/",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "An end-to-end AI-powered blog generation system built using LangGraph + Ollama + Streamlit. It automatically plans, researches (optional), writes, and formats high-quality technical blogs.",
-      technologies: [
-        "Streamlit",
-        "LangGraph",
-        "Ollama",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/NeelContractor/BlogWritingAgentApp",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Website",
-          href: "https://blogwritingagentapp.streamlit.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/blog_writing_agent.png",
-      video:
-        "/blog_writing_agent.mov",
-    },
-    {
-      title: "NexaAI SelfRAG",
-      href: "https://nexaaiselfrag.streamlit.app/",
-      dates: "March 2026",
-      active: true,
-      description:
-        "A Self-RAG (Retrieval-Augmented Generation) chatbot built using LangGraph + Ollama + Streamlit. It intelligently decides when to retrieve company documents and ensures answers are grounded, useful, and verifiable.",
-      technologies: [
-        "Streamlit",
-        "LangGraph",
-        "Ollama",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/NeelContractor/NexaAI_SelfRAG_APP",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Website",
-          href: "https://nexaaiselfrag.streamlit.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/nexai_self_rag.png",
-      video:
-        "/nexa_ai_assistent.mov",
-    },
-    {
-      title: "YouTubeRAGQA",
-      href: "https://youtuberagqna.streamlit.app/",
-      dates: "March 2026",
-      active: true,
-      description:
-        "A Retrieval-Augmented Generation (RAG) application that allows users to ask questions about a YouTube video. The app extracts the video transcript, converts it into embeddings, stores them in a vector database, retrieves relevant context, and generates answers using an LLM.",
-      technologies: [
-        "Streamlit",
-        "LangGraph",
-        "Ollama",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/NeelContractor/YouTubeRAGQA",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Website",
-          href: "https://youtuberagqna.streamlit.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/youtube_rag_qa.png",
+      image: "/my_harness.png",
       video:
         "",
     },
+    {
+      title: "Perplexity",
+      href: "https://github.com/NeelContractor/perplexity",
+      dates: "June 2026",
+      active: true,
+      description:
+        "A Perplexity-style AI search application. Ask a question, get a streamed answer backed by live web results, and keep your full conversation history — all in one clean interface.",
+      technologies: [
+        "ReactJs",
+        "ElysiaJs",
+        "OpenRouter",
+        "Tavily",
+        "Supabase",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/NeelContractor/perplexity",
+          icon: <Icons.github className="size-3" />,
+        },
+        // {
+        //   type: "Website",
+        //   href: "https://visionagentapp.streamlit.app/",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
+      ],
+      image: "/perplexity.png",
+      video:
+        "",
+    },
+    {
+      title: "FineTune Healthcare",
+      href: "https://github.com/NeelContractor/FineTune_Healthcare",
+      dates: "June 2026",
+      active: true,
+      description:
+        "A fine-tuned Llama-3.2-3B-Instruct model specialized for answering general medical/health questions in plain language, trained with QLoRA on a free Google Colab T4 GPU.",
+      technologies: [
+        "Python",
+        "Unsloth",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/NeelContractor/FineTune_Healthcare",
+          icon: <Icons.github className="size-3" />,
+        },
+        // {
+        //   type: "Website",
+        //   href: "https://visionagentapp.streamlit.app/",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
+      ],
+      image: "/finetune_healthcare.png",
+      video:
+        "",
+    },
+    {
+      title: "RAG Chatbot",
+      href: "https://github.com/NeelContractor/RAG_ChatBot",
+      dates: "June 2026",
+      active: true,
+      description:
+        "A multi-tool chatbot built with LangGraph and Streamlit that can answer questions about an uploaded PDF (RAG), search the web, and do arithmetic — all backed entirely by free-tier services, so it costs nothing to run or deploy.",
+      technologies: [
+        "Streamlit",
+        "LangGraph",
+        "OpenRouter",
+        "FAISS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/NeelContractor/RAG_ChatBot",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://streamrag.streamlit.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/rag_chatbot.png",
+      video:
+        "",
+    },
+    // {
+    //   title: "Vision Agent",
+    //   href: "https://visionagentapp.streamlit.app/",
+    //   dates: "April 2026",
+    //   active: true,
+    //   description:
+    //     "A lightweight local AI vision agent built with Streamlit + LangGraph + Ollama that analyzes images and answers user questions using a multi-step pipeline.",
+    //   technologies: [
+    //     "Streamlit",
+    //     "LangGraph",
+    //     "Ollama",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/NeelContractor/VisionAgent",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //     {
+    //       type: "Website",
+    //       href: "https://visionagentapp.streamlit.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/vision_agent.png",
+    //   video:
+    //     "/vision_agent_demo_vid.mov",
+    // },
+    // {
+    //   title: "SmartChat Assistant",
+    //   href: "https://smartchatassistant.streamlit.app/",
+    //   dates: "March 2026",
+    //   active: true,
+    //   description:
+    //     "A powerful AI chat application built with Streamlit + LangGraph + Ollama that supports: Multi-threaded conversations, PDF-based RAG, Web search, Stock price lookup, Calculator tool, Persistent memory using SQLite checkpoints",
+    //   technologies: [
+    //     "Streamlit",
+    //     "LangGraph",
+    //     "Ollama",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://smartchatassistant.streamlit.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/NeelContractor/SmartChatAssistant",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/smar_chat_assistent.png",
+    //   video: "/smart_chat_assistent_demo_vid.mov",
+    // },
+    // {
+    //   title: "Movie Recommendation System",
+    //   href: "https://movie-finder-sys.streamlit.app/",
+    //   dates: "May 2026",
+    //   active: true,
+    //   description:
+    //     "A hybrid movie recommendation system combining content-based filtering and collaborative filtering, built on the TMDB 5000 dataset and deployed as an interactive Streamlit web app.",
+    //   technologies: [
+    //     "Streamlit",
+    //     "Scikit-learn",
+    //     "Python",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://movie-finder-sys.streamlit.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/NeelContractor/movie_recommendation_system",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/movie-recommendation-system.png",
+    //   video: "",
+    // },
+    // {
+    //   title: "Research Assistant",
+    //   href: "https://researchassistantagent.streamlit.app/",
+    //   dates: "March 2026",
+    //   active: true,
+    //   description:
+    //     "A fully local, privacy-first research assistant powered by LangGraph (multi-agent orchestration), Ollama (local LLMs), and Streamlit (frontend UI).",
+    //   technologies: [
+    //     "Streamlit",
+    //     "LangGraph",
+    //     "Ollama",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://researchassistantagent.streamlit.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/NeelContractor/ResearchAssistantAgent",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/research_assistent_agent.png",
+    //   video: "/researchagentdemovideo.mov",
+    // },
+    // {
+    //   title: "Blog Writing Agent",
+    //   href: "https://blogwritingagentapp.streamlit.app/",
+    //   dates: "April 2023 - March 2024",
+    //   active: true,
+    //   description:
+    //     "An end-to-end AI-powered blog generation system built using LangGraph + Ollama + Streamlit. It automatically plans, researches (optional), writes, and formats high-quality technical blogs.",
+    //   technologies: [
+    //     "Streamlit",
+    //     "LangGraph",
+    //     "Ollama",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/NeelContractor/BlogWritingAgentApp",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Website",
+    //       href: "https://blogwritingagentapp.streamlit.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/blog_writing_agent.png",
+    //   video:
+    //     "/blog_writing_agent.mov",
+    // },
+    // {
+    //   title: "NexaAI SelfRAG",
+    //   href: "https://nexaaiselfrag.streamlit.app/",
+    //   dates: "March 2026",
+    //   active: true,
+    //   description:
+    //     "A Self-RAG (Retrieval-Augmented Generation) chatbot built using LangGraph + Ollama + Streamlit. It intelligently decides when to retrieve company documents and ensures answers are grounded, useful, and verifiable.",
+    //   technologies: [
+    //     "Streamlit",
+    //     "LangGraph",
+    //     "Ollama",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/NeelContractor/NexaAI_SelfRAG_APP",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Website",
+    //       href: "https://nexaaiselfrag.streamlit.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/nexai_self_rag.png",
+    //   video:
+    //     "/nexa_ai_assistent.mov",
+    // },
+    // {
+    //   title: "YouTubeRAGQA",
+    //   href: "https://youtuberagqna.streamlit.app/",
+    //   dates: "March 2026",
+    //   active: true,
+    //   description:
+    //     "A Retrieval-Augmented Generation (RAG) application that allows users to ask questions about a YouTube video. The app extracts the video transcript, converts it into embeddings, stores them in a vector database, retrieves relevant context, and generates answers using an LLM.",
+    //   technologies: [
+    //     "Streamlit",
+    //     "LangGraph",
+    //     "Ollama",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/NeelContractor/YouTubeRAGQA",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //     {
+    //       type: "Website",
+    //       href: "https://youtuberagqna.streamlit.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/youtube_rag_qa.png",
+    //   video:
+    //     "",
+    // },
   ],
   hackathons: [
     {
